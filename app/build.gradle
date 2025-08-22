@@ -3,46 +3,64 @@ plugins {
 }
 
 android {
-    compileSdk 35
-    buildToolsVersion '35.0.1'
-    namespace 'com.company'
+    // Old: compileSdk 35  -> New: use assignment
+    compileSdk = 35
+
+    // (Optional) buildToolsVersion specify karna zaroori nahi hota AGP 8+ me.
+    // Agar rakhna ho to assignment syntax use karein:
+    // buildToolsVersion = '35.0.1'
+
+    // Old: namespace 'com.company'
+    namespace = 'com.company'
 
     defaultConfig {
-        applicationId 'com.company.game'
-        minSdk 23
-        targetSdk 35
-        versionCode 1
-        versionName '1.0.0'
-        multiDexEnabled true
+        applicationId = 'com.company.game'
+        minSdk = 23
+        targetSdk = 35
+        versionCode = 1
+        versionName = '1.0.0'
+        multiDexEnabled = true
     }
 
     buildTypes {
         debug {
-            minifyEnabled false
-            shrinkResources false
-            debuggable true
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            minifyEnabled = false
+            shrinkResources = false
+            debuggable = true
+            proguardFiles(
+                getDefaultProguardFile('proguard-android-optimize.txt'),
+                'proguard-rules.pro'
+            )
         }
         release {
-            minifyEnabled false
-            shrinkResources false
-            debuggable false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            minifyEnabled = false
+            shrinkResources = false
+            debuggable = false
+            proguardFiles(
+                getDefaultProguardFile('proguard-android-optimize.txt'),
+                'proguard-rules.pro'
+            )
         }
     }
+
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
+
+    // Old block: dependenciesInfo { includeInApk true / includeInBundle true }
     dependenciesInfo {
-        includeInApk true
-        includeInBundle true
+        includeInApk = true
+        includeInBundle = true
     }
 
-    lintOptions {
-        checkReleaseBuilds false
+    // Old: lintOptions { checkReleaseBuilds false } (deprecated)
+    // New:
+    lint {
+        // equivalent intent: don't fail the build on lint errors
+        abortOnError = false
+        // (checkReleaseBuilds option removed in newer AGP)
     }
-
 }
 
 dependencies {
@@ -55,5 +73,4 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7'
     implementation 'com.google.android.ump:user-messaging-platform:3.2.0'
     implementation 'androidx.preference:preference:1.2.1'
-
 }
