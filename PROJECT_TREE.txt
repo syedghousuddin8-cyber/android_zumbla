@@ -1,0 +1,136 @@
+android_zumbla
+├── .gitignore
+├── README.md
+├── app
+│   ├── .gitignore
+│   ├── build.gradle
+│   ├── libs
+│   ├── proguard-rules.pro
+│   ├── release
+│   │   └── output-metadata.json
+│   └── src
+│       └── main
+│           ├── AndroidManifest.xml
+│           ├── assets
+│           │   └── game
+│           │       ├── game.js
+│           │       ├── hooks.js
+│           │       ├── img
+│           │       │   ├── backgrounds
+│           │       │   │   ├── background1.png
+│           │       │   │   ├── frame.png
+│           │       │   │   ├── levels.png
+│           │       │   │   └── tile.png
+│           │       │   ├── fx.json
+│           │       │   ├── fx.png
+│           │       │   ├── game.json
+│           │       │   ├── game.png
+│           │       │   ├── preloader.json
+│           │       │   ├── preloader.png
+│           │       │   ├── ui.json
+│           │       │   └── ui.png
+│           │       ├── index.html
+│           │       ├── levels.js
+│           │       ├── lib
+│           │       │   └── phaser.js
+│           │       ├── privarcypolicy.txt
+│           │       └── sound
+│           │           └── mp3
+│           │               ├── ball_destroying.mp3
+│           │               ├── ball_inserting.mp3
+│           │               ├── ball_swap01.mp3
+│           │               ├── ball_swap02.mp3
+│           │               ├── bomb_explosion.mp3
+│           │               ├── click.mp3
+│           │               ├── coin_bonus.mp3
+│           │               ├── combo1.mp3
+│           │               ├── combo10.mp3
+│           │               ├── combo2.mp3
+│           │               ├── combo3.mp3
+│           │               ├── combo4.mp3
+│           │               ├── combo5.mp3
+│           │               ├── combo6.mp3
+│           │               ├── combo7.mp3
+│           │               ├── combo8.mp3
+│           │               ├── combo9.mp3
+│           │               ├── defeat_heartbeat.mp3
+│           │               ├── fireball_picking_up.mp3
+│           │               ├── fireball_shot.mp3
+│           │               ├── freezing.mp3
+│           │               ├── gap_bonus.mp3
+│           │               ├── gap_collapsing.mp3
+│           │               ├── idol_hit_main_menu.mp3
+│           │               ├── idol_mouth_closing.mp3
+│           │               ├── idol_mouth_opening.mp3
+│           │               ├── lazer.mp3
+│           │               ├── lighting.mp3
+│           │               ├── path_initialization.mp3
+│           │               ├── platform_change.mp3
+│           │               ├── pop.mp3
+│           │               ├── powerup_appearing.mp3
+│           │               ├── rewind.mp3
+│           │               ├── rolling_balls.mp3
+│           │               ├── scores_counting.mp3
+│           │               ├── shot01.mp3
+│           │               ├── shot02.mp3
+│           │               ├── swish_left.mp3
+│           │               ├── swish_right.mp3
+│           │               ├── themeA.mp3
+│           │               ├── themeB.mp3
+│           │               ├── themeC.mp3
+│           │               ├── torch_loop.mp3
+│           │               ├── torch_start.mp3
+│           │               ├── unfreezing.mp3
+│           │               ├── victory.mp3
+│           │               └── wheel.mp3
+│           ├── java
+│           │   └── com
+│           │       └── company
+│           │           └── game
+│           │               ├── AndroidFile.java
+│           │               ├── Gdpr.java
+│           │               ├── MainActivity.java
+│           │               ├── NanoHTTPD.java
+│           │               ├── PrivacyActivity.java
+│           │               ├── UtilsAdmob.java
+│           │               ├── UtilsAwv.java
+│           │               └── UtilsManager.java
+│           └── res
+│               ├── drawable
+│               │   ├── about_icon.png
+│               │   ├── loading.jpg
+│               │   ├── loading_screen.xml
+│               │   ├── no_internet.png
+│               │   ├── splash.jpg
+│               │   └── splash_screen.xml
+│               ├── layout
+│               │   ├── activity_main.xml
+│               │   └── privacy_policy.xml
+│               ├── mipmap-hdpi
+│               │   └── icon.png
+│               ├── mipmap-ldpi
+│               │   └── icon.png
+│               ├── mipmap-mdpi
+│               │   └── icon.png
+│               ├── mipmap-xhdpi
+│               │   └── icon.png
+│               ├── mipmap-xxhdpi
+│               │   └── icon.png
+│               ├── mipmap-xxxhdpi
+│               │   └── icon.png
+│               ├── values
+│               │   ├── colors.xml
+│               │   ├── strings.xml
+│               │   └── themes.xml
+│               └── xml
+│                   └── network_security_config.xml
+├── build.gradle
+├── gradle
+│   └── wrapper
+│       ├── gradle-wrapper.jar
+│       └── gradle-wrapper.properties
+├── gradle.properties
+├── gradlew
+├── gradlew.bat
+├── push_to_github.sh
+└── settings.gradle
